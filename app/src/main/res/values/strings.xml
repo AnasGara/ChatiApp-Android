@@ -17,5 +17,6 @@
     <string name="permission_rationale">"Contacts permissions are needed for providing email
         completions."
     </string>
+    <string name="login_prog">Logging in is in progress..</string>
     <string name="sample_message">Hello!</string>
 </resources>

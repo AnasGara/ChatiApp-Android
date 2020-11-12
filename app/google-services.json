@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "763026440010",
+    "firebase_url": "https://chati-3d290.firebaseio.com",
+    "project_id": "chati-3d290",
+    "storage_bucket": "chati-3d290.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:763026440010:android:7d46fbf09ad60e249b0bb3",
+        "android_client_info": {
+          "package_name": "com.anas.chatiApp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "763026440010-aa4kes3tcn8ov32s7do4m0fg0n9cq3qq.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD0-c11DjRHHl7vBu41cgUqjkNSJvmoRkM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "763026440010-aa4kes3tcn8ov32s7do4m0fg0n9cq3qq.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
