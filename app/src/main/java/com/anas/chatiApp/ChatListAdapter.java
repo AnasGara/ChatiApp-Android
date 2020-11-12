@@ -2,7 +2,9 @@ package com.anas.chatiApp;
 
 import android.app.Activity;
 import android.content.Context;
+import android.graphics.Color;
 import android.util.Log;
+import android.view.Gravity;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -112,6 +114,9 @@ public class ChatListAdapter extends BaseAdapter {
         final InstantMessage message = getItem(position);
         final ViewHolder holder = (ViewHolder) convertView.getTag();
 
+        boolean isMe=message.getAuthor().equals(mDisplayName);
+        setChatRowApperance(isMe,holder);
+
         String author=message.getAuthor();
         holder.authorName.setText(author);
 
@@ -120,6 +125,22 @@ public class ChatListAdapter extends BaseAdapter {
         return convertView;
     }
 
+    public void setChatRowApperance(boolean isItMe, ViewHolder holder) {
+        if (isItMe) {
+            holder.params.gravity = Gravity.END;
+            holder.authorName.setTextColor(Color.RED);
+            holder.body.setBackgroundResource(R.drawable.bubble2);
+        } else
+        {
+            holder.params.gravity = Gravity.START;
+            holder.authorName.setTextColor(Color.BLUE);
+            holder.body.setBackgroundResource(R.drawable.bubble1);
+        }
+
+        holder.authorName.setLayoutParams(holder.params);
+        holder.body.setLayoutParams(holder.params);
+
+    }
     public void cleanup(){
         mDatabaseReference.removeEventListener(mListener);
     }
